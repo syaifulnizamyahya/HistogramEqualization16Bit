@@ -27,7 +27,7 @@ TEST(HistogramEqualization, Valid16bitInput)
 	std::cout << src << std::endl << std::endl;
 	std::cout << "Destination M :" << std::endl;
 	std::cout << dst << std::endl << std::endl;
-	std::cout << "Result M :" << std::endl;
+	std::cout << "Expected Destination M :" << std::endl;
 	std::cout << result << std::endl << std::endl;
 	cv::Mat diff = dst != result;
 	EXPECT_TRUE(cv::countNonZero(diff) == 0);
@@ -55,7 +55,7 @@ TEST(HistogramEqualization, Valid8bitInput)
 	std::cout << src << std::endl << std::endl;
 	std::cout << "Destination M :" << std::endl;
 	std::cout << dst << std::endl << std::endl;
-	std::cout << "Result M :" << std::endl;
+	std::cout << "Expected Destination M :" << std::endl;
 	std::cout << result << std::endl << std::endl;
 	cv::Mat diff = dst != result;
 	EXPECT_TRUE(cv::countNonZero(diff) == 0);
@@ -83,7 +83,7 @@ TEST(HistogramEqualization, Zero8bitInput)
 	std::cout << src << std::endl << std::endl;
 	std::cout << "Destination M :" << std::endl;
 	std::cout << dst << std::endl << std::endl;
-	std::cout << "Result M :" << std::endl;
+	std::cout << "Expected Destination M :" << std::endl;
 	std::cout << result << std::endl << std::endl;
 	cv::Mat diff = dst != result;
 	EXPECT_TRUE(cv::countNonZero(diff) == 0);
@@ -115,7 +115,7 @@ TEST(HistogramEqualization, Zero16bitInput)
 	std::cout << src << std::endl << std::endl;
 	std::cout << "Destination M :" << std::endl;
 	std::cout << dst << std::endl << std::endl;
-	std::cout << "Result M :" << std::endl;
+	std::cout << "Expected Destination M :" << std::endl;
 	std::cout << result << std::endl << std::endl;
 	cv::Mat diff = dst != result;
 	EXPECT_TRUE(cv::countNonZero(diff) == 0);
@@ -143,7 +143,7 @@ TEST(HistogramEqualization, One8bitInput)
 	std::cout << src << std::endl << std::endl;
 	std::cout << "Destination M :" << std::endl;
 	std::cout << dst << std::endl << std::endl;
-	std::cout << "Result M :" << std::endl;
+	std::cout << "Expected Destination M :" << std::endl;
 	std::cout << result << std::endl << std::endl;
 	cv::Mat diff = dst != result;
 	EXPECT_TRUE(cv::countNonZero(diff) == 0);
@@ -175,7 +175,7 @@ TEST(HistogramEqualization, One16bitInput)
 	std::cout << src << std::endl << std::endl;
 	std::cout << "Destination M :" << std::endl;
 	std::cout << dst << std::endl << std::endl;
-	std::cout << "Result M :" << std::endl;
+	std::cout << "Expected Destination M :" << std::endl;
 	std::cout << result << std::endl << std::endl;
 	cv::Mat diff = dst != result;
 	EXPECT_TRUE(cv::countNonZero(diff) == 0);
@@ -203,7 +203,7 @@ TEST(HistogramEqualization, Max8bitInput)
 	std::cout << src << std::endl << std::endl;
 	std::cout << "Destination M :" << std::endl;
 	std::cout << dst << std::endl << std::endl;
-	std::cout << "Result M :" << std::endl;
+	std::cout << "Expected Destination M :" << std::endl;
 	std::cout << result << std::endl << std::endl;
 	cv::Mat diff = dst != result;
 	EXPECT_TRUE(cv::countNonZero(diff) == 0);
@@ -235,7 +235,7 @@ TEST(HistogramEqualization, Max16bitInput)
 	std::cout << src << std::endl << std::endl;
 	std::cout << "Destination M :" << std::endl;
 	std::cout << dst << std::endl << std::endl;
-	std::cout << "Result M :" << std::endl;
+	std::cout << "Expected Destination M :" << std::endl;
 	std::cout << result << std::endl << std::endl;
 	cv::Mat diff = dst != result;
 	EXPECT_TRUE(cv::countNonZero(diff) == 0);
