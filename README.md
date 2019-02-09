@@ -20,24 +20,24 @@ This project requires you to have precompiled [OpenCV](https://opencv.org/) libr
 
 1. Edit CMakeLists.txt at the root folder of this project to set the correct OpenCV path.
 
-```
-# Make sure to configure this block
-###############################################################################
-set(OpenCV_DIR "D:/Project/DurrNDT/opencv")
-# we want to copy OpenCV bin files to build dir
-set(OpenCV_BIN_DIR "D:/Project/DurrNDT/opencv/x64/vc15/bin") 
-###############################################################################
-```
+    ```
+    # Make sure to configure this block
+    ###############################################################################
+    set(OpenCV_DIR "D:/Project/DurrNDT/opencv")
+    # we want to copy OpenCV bin files to build dir
+    set(OpenCV_BIN_DIR "D:/Project/DurrNDT/opencv/x64/vc15/bin") 
+    ###############################################################################
+    ```
 
 1. If you are not using OpenCV 4.0.1, make appropriate changes in the same CMakeLists.txt
 
-```
-find_package(OpenCV 4.0.1 REQUIRED)
-```
+    ```
+    find_package(OpenCV 4.0.1 REQUIRED)
+    ```
 
 1. Configure and generate using cmake/cmake-gui
 
-![CMAKE-GUI](https://i.imgur.com/YFGrCRv.png)
+    ![CMAKE-GUI](https://i.imgur.com/YFGrCRv.png)
 
 1. Find generated .sln and compile with Visual Studio. 
 
