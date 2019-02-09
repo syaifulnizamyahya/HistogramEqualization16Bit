@@ -47,6 +47,17 @@ find_package(OpenCV 4.0.1 REQUIRED)
 
 Histogram-Test is the testing project. It uses [googletest](https://github.com/google/googletest) framework.
 
+## Potential improvement
+
+Speed of the method can be improve (potentially) by
+* parallel processing
+* uses OpenCL
+* uses OpenVX
+
+I uses platform specific function in the main function. This can be improved by using C++17(among others).
+
+Histogram equalization method depends on OpenCV.
+
 ## Built With
 
 * [OpenCV](https://opencv.org/) 
